@@ -1,7 +1,7 @@
 version: '3'
 
 env:
-  GITHUB_USER: merusso
+  GITHUB_USER: mcpradeep
 
 dotenv:
   - .env
