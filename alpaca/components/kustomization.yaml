@@ -16,7 +16,7 @@ patches:
     patch: |
       - op: replace
         path: /spec/values/replicaCount
-        value: 21
+        value: 2
       - op: replace
         path: /metadata/labels/gwcp.guidewire.com~1dept
         value: 22
