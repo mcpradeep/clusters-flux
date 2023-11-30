@@ -47,3 +47,14 @@ patches:
       - op: replace
         path: /spec/values/replicaCount
         value: 2
+  - target:
+      name: charlie
+      kind: HelmRelease
+    patch: |
+      apiVersion: builtin
+      kind: LabelTransformer
+      metadata:
+        name: add-managed-by-label
+      labels:
+        gwcp.guidewire.com/app-code: charlie
+        gwcp.guidewire.com/tenant-code: 1234
